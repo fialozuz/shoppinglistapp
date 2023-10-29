@@ -3,6 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image'
+import Icon from "@mdi/react";
+import { mdiPlusCircle, mdiViewHeadline } from "@mdi/js";
+import ListGroup from 'react-bootstrap/ListGroup';
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -23,20 +26,32 @@ function NavBar() {
   return (
     <Navbar fixed="top" expand="lg">
       <Container>
-        <Button variant="primary" onClick={handleShow}>
-              Launch
-            </Button>
-
+        <Icon path={mdiViewHeadline} size={3} onClick={handleShow}/>
             <Offcanvas show={show} onHide={handleClose}>
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                <Offcanvas.Title>Menu</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                Some text as placeholder. In real life you can have the elements you
-                have chosen. Like, text, images, lists, etc.
+                New List
+                <ListGroup>
+                  <ListGroup.Item action variant="warning" onClick={console.log('ahoj')} style={{marginBottom: "30px"}}>
+                    <Icon path={mdiPlusCircle} size={1} style={{marginLeft: "47%",}}/>
+                  </ListGroup.Item>
+                </ListGroup>
+                <ListGroup>
+                  <ListGroup.Item action onClick={console.log('1')}>
+                    This one is a button1
+                  </ListGroup.Item>
+                  <ListGroup.Item action onClick={console.log('2')}>
+                    This one is a button2
+                  </ListGroup.Item>
+                  <ListGroup.Item action onClick={console.log('3')}>
+                    This one is a button3
+                  </ListGroup.Item>
+                </ListGroup>
               </Offcanvas.Body>
             </Offcanvas>
-        <Navbar.Brand href="/home" possition="absolute" margin-left="50%">
+        <Navbar.Brand href="/home" possition="absolute">
           <img
             src={logo}
             width="500"

@@ -1,5 +1,7 @@
-/* import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { UserProvider } from "./UserProvider"; */
+//import ListModalEdit from './Components/ListModalEdit';
+//import ListDetailt from "./Components/ListDetail";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 //COMPONENTS
 import NavBar from "./Components/NavBar" ;
@@ -14,10 +16,17 @@ import './App.css';
 
 
 function App() {
-  return (
-    <NavBar/>
+  return (    
+    <BrowserRouter>
+      <NavBar/>
+      <div className='m-4'>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/list" element={<List/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
