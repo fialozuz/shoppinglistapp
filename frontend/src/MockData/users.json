@@ -1,0 +1,17 @@
+[{
+    "firstname":"Aneta",
+    "secondname":"Achylová",
+    "photo":"frontend/src/MockData/Pictures/userphoto.png",
+    "id":"63",
+    "listOwner":["53","17"]
+},{
+    "firstname":"Andrea",
+    "secondname":"Achylová",
+    "id":"11",
+    "listOwner":["15"]
+},{
+    "firstname":"Lukáš",
+    "secondname":"Achyl",
+    "id":"23",
+    "listOwner":["28"]
+}]

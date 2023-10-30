@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/esm/Image';
+import Container from 'react-bootstrap/esm/Container';
 /* import { useState } from "react";
 
 import Form from 'react-bootstrap/Form';
@@ -10,14 +11,14 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import ListModalEdit from './ListModalEdit'; */
 
 
-function ListDetailt() {
+function ListDetail() {
 /*     const handleClick = () => {
         const [showListModalEdit, setShowListModalEdit] = useState(false);
         // MODAL HERE
         setShowListModalEdit(true);
     } */
     return (
-    <div>
+    <Container>
         <Card>
         <Card.Header as="h5">Název nákupního seznamu
             <Image src='https://tse1.mm.bing.net/th?q=blue+color' width="25" height="25" roundedCircle   display="block" marginLeft="auto"wmarginRight= "20px "/>
@@ -39,8 +40,8 @@ function ListDetailt() {
             </Card.Footer>
         </Card>
         {/* <ListModalEdit refresh={refresh} show={showListModalEdit} setShow={setShowListModalEdit} /* recipe={recipe} *//> */}
-    </div>
+    </Container>
     );
   }
   
-  export default ListDetailt;
+  export default ListDetail;

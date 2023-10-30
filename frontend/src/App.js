@@ -1,5 +1,5 @@
 //import ListModalEdit from './Components/ListModalEdit';
-//import ListDetailt from "./Components/ListDetail";
+//import ListDetail from "./Components/ListDetail";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 

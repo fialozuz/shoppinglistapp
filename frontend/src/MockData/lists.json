@@ -1,0 +1,74 @@
+[{
+    "listName":"Nákup jídla",
+    "idList":"53",
+    "idMembers":["11", "23"],
+    "itemes": [
+        {
+            "item":"kapesníky",
+            "active":"true"
+        },{
+            "item":"rýže",
+            "active":"false"
+        },{
+            "item":"chleba",
+            "active":"true"
+        },{
+            "item":"zmrzlina",
+            "active":"true"
+        },{
+            "item":"utěrka",
+            "active":"true"
+        }
+    ]
+},{
+    "listName":"Dámská hygiena",
+    "idList":"17",
+    "idMembers":["11"],
+    "itemes": [
+        {
+            "item":"vložky",
+            "active":"true"
+        },{
+            "item":"vlhčené ubrousky",
+            "active":"false"
+        }
+    ]
+},{
+    "listName":"Seznam pro ježíška",
+    "idList":"28",
+    "idMembers":["63"],
+    "itemes": [
+        {
+            "item":"kapesníky",
+            "active":"true"
+        },{
+            "item":"rýže",
+            "active":"true"
+        },{
+            "item":"chleba",
+            "active":"true"
+        },{
+            "item":"zmrzlina",
+            "active":"true"
+        },{
+            "item":"utěrka",
+            "active":"true"
+        }
+    ]
+},{
+    "listName":"Narozeninová párty",
+    "idList":"15",
+    "idMembers":[],
+    "itemes": [
+        {
+            "item":"konfety",
+            "active":"false"
+        },{
+            "item":"dort",
+            "active":"false"
+        },{
+            "item":"punč",
+            "active":"true"
+        }
+    ]
+}]
